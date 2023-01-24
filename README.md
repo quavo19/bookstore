@@ -17,7 +17,7 @@
   - [⭐️ Show your support ](#️-show-your-support-)
   - [📝 License ](#-license-)
 
-# 📖 Math-magicians <a name="about-project"></a>
+# 📖 BOOK STORE <a name="about-project"></a>
 This is a simple application made with react that is intended to be used for storing books
 
 ## 🛠 Built With <a name="built-with"></a>
