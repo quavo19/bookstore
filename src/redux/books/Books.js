@@ -20,7 +20,7 @@ export const RemoveBook = (bookid) => (
 );
 
 // reducer
-const Reducer = (action, state = [...book]) => {
+const ReducerBooks = (action, state = [...book]) => {
   switch (action.type) {
     case ADD:
       return [
@@ -32,4 +32,4 @@ const Reducer = (action, state = [...book]) => {
   }
 };
 
-export default Reducer;
+export default ReducerBooks;
