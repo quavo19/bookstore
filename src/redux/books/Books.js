@@ -1,35 +1,44 @@
-// Actions
-const REMOVE = 'BOOKS/BOOK_REMOVED';
-const ADD = 'BOOKS/BOOK_ADDED';
+const ADD = 'bookstore/books/ADD';
+const REMOVE = 'bookstore/books/REMOVE';
 
-// book array
-const book = [];
-
-export const AddBook = (bookitem) => (
+const initialState = [
   {
-    type: ADD,
-    payload: bookitem,
-  }
-);
-
-export const RemoveBook = (bookid) => (
+    id: '0',
+    genre: 'Action',
+    title: 'Family guy',
+    author: 'donald',
+  },
   {
-    type: REMOVE,
-    payload: bookid,
-  }
-);
+    id: '1',
+    genre: 'Action',
+    title: 'family guy',
+    author: 'Akite',
+  },
+];
 
-// reducer
-const Reducer = (action, state = [...book]) => {
+const ReducerBooks = (state = initialState, action) => {
   switch (action.type) {
     case ADD:
       return [
         ...state, action.payload,
       ];
     case REMOVE:
-      return state.filter((removed) => removed.id !== action.payload);
+      return state.filter((book) => book.id !== action.payload);
     default: return state;
   }
 };
+export const AddBook = (payload) => (
+  {
+    type: ADD,
+    payload,
+  }
+);
 
-export default Reducer;
+export const RemoveBook = (payload) => (
+  {
+    type: REMOVE,
+    payload,
+  }
+);
+
+export default ReducerBooks;
