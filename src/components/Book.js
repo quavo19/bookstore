@@ -5,7 +5,7 @@ import { RemoveBook } from '../redux/books/Books';
 
 function Book({ book }) {
   const {
-    title, author, genre,
+    title, author,
   } = book;
   const dispatch = useDispatch();
   const handleDelete = () => {
@@ -14,7 +14,7 @@ function Book({ book }) {
   return (
     <div className="abook flex">
       <div className="first-row flex">
-        <p>{genre}</p>
+        <p>Action</p>
         <p>{title}</p>
         <p>{author}</p>
         <div className=" control-buttons flex">
