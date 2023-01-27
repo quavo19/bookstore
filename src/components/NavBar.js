@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { BsPersonFill } from 'react-icons/bs';
 
 function NavBar() {
   return (
@@ -10,7 +11,7 @@ function NavBar() {
           <li><Link to="/categories">CATEGORIES</Link></li>
         </ul>
       </div>
-      <div className="profile flex blue">Profile</div>
+      <div className="profile flex blue"><BsPersonFill /></div>
     </nav>
   );
 }

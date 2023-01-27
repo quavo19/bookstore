@@ -15,8 +15,8 @@ function BookList() {
     dispatch(fetchdata());
   }, [dispatch]);
   return (
-    <>
-      <ul>
+    <div className="Main-content">
+      <ul className="list">
         {Booklist.map((books) => (
           <li key={books.id}>
             {' '}
@@ -25,7 +25,7 @@ function BookList() {
         ))}
       </ul>
       <Form />
-    </>
+    </div>
   );
 }
 export default BookList;

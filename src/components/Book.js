@@ -14,10 +14,10 @@ function Book({ book }) {
   return (
     <div className="abook flex">
       <div className="first-row flex">
-        <p>Action</p>
-        <p>{title}</p>
-        <p>{author}</p>
-        <div className=" control-buttons flex">
+        <p className="genre">Action</p>
+        <h2>{title}</h2>
+        <p className="blue">{author}</p>
+        <div className=" control-buttons flex blue">
           <button type="button">Comments</button>
           <button type="button" onClick={handleDelete}>Remove</button>
           <button type="button">Edit</button>
@@ -26,13 +26,13 @@ function Book({ book }) {
       <div className="second-row flex">
         <div className="state flex">
           <div className="circle"> </div>
-          <div>
-            <p>64%</p>
-            <p>completed</p>
+          <div className="completed-percentage">
+            <p className="percentage">64%</p>
+            <p className="completed">completed</p>
           </div>
         </div>
-        <div>
-          <p>Current Chapter</p>
+        <div className="process">
+          <p className="completed">Current Chapter</p>
           <p>Chapter  17</p>
           <button type="button" className="button">UPDATE PROCESS</button>
         </div>
