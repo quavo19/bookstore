@@ -12,7 +12,7 @@
 }
 
 .blue {
-  color: #0290FF;
+  color: #0290ff;
 }
 
 .Nav-bar {
@@ -81,7 +81,7 @@
   border: none;
   background-color: #fff;
   width: 74px;
-  color: #0290FF;
+  color: #0290ff;
   border-right: 2px solid rgb(206, 204, 204);
 }
 
@@ -111,7 +111,7 @@
   height: 70px;
   width: 70px;
   margin-right: 20px;
-  border: 5px solid #0290FF;
+  border: 5px solid #0290ff;
   border-left: 5px solid rgb(206, 204, 204);
   border-radius: 50%;
   transform: rotate(40deg);
@@ -127,7 +127,7 @@
   border: none;
   color: #fff;
   border-radius: 3px;
-  background: #0290FF;
+  background: #0290ff;
 }
 
 .form-container {
@@ -144,15 +144,15 @@
   padding-bottom: 50px;
 }
 
-form input:nth-child(1) {
-  width: 55%;
-}
-
 .form input {
   padding: 10px;
   font-size: 20px;
   outline: none;
   border: 2px solid rgb(206, 204, 204);
+}
+
+form input:nth-child(1) {
+  width: 55%;
 }
 
 .profile {
