@@ -28,8 +28,8 @@ function Form() {
     });
   };
   return (
-    <div>
-      <h1>ADD NEW BOOK</h1>
+    <div className="form-container">
+      <h3>ADD NEW BOOK</h3>
       <div>
         <form className=" form flex" onSubmit={handleSubmit}>
           <input
