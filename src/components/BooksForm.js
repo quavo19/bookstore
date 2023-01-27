@@ -6,7 +6,7 @@ import { AddBook } from '../redux/books/Books';
 function Form() {
   const [userInput, setUserInput] = useState({
     id: '',
-    genre: '',
+    genre: 'Action',
     title: '',
     author: '',
   });
